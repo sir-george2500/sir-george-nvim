@@ -22,6 +22,12 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+}
   use({
       "folke/trouble.nvim",
       config = function()
@@ -76,15 +82,19 @@ return require('packer').startup(function(use)
   use("laytan/cloak.nvim")
 
     --lualine
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
-  --vim-visual-multi
-  use {
-      'mg979/vim-visual-multi',
-      branch = 'master'
-  }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    --indent-blankline
+    use "lukas-reineke/indent-blankline.nvim"
+    --vim-visual-multi
+    use {
+        'mg979/vim-visual-multi',
+        branch = 'master'
+    }
+
+    use("dnlhc/glance.nvim")
 
 end)
 

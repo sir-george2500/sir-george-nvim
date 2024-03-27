@@ -7,7 +7,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- I am not a emacs user to type shit just to duplicate line nvim
 -- make it easy for me
-vim.keymap.set("n", "DD", ":t.")
+vim.keymap.set("n", "<leader>DD", ":t.")
 --Save me the time of bring the terminal up
 vim.keymap.set("n", "<leader>t",":terminal")
 

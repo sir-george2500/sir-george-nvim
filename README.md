@@ -15,4 +15,7 @@ about though i would just suggest `git log -S`).
 * [4a96e645](https://github.com/ThePrimeagen/init.lua/commit/4a96e6457b0a0241ca7361ce62177aa6b9a33a38) fugitive mappings for push and pull
 * [a3bad06a](https://github.com/ThePrimeagen/init.lua/commit/a3bad06a4681c322538d609aa1c0bd18880f77c6) disabled eslint.  driving me crazy
 
+## What George Mulbah  have added to this repo
+- remap for duplicating of line in nvim , yeah skip the pain of typing
+- remap for opening the terminal in nvim
 
