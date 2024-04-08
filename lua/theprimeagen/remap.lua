@@ -1,15 +1,14 @@
 
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
+vim.api.nvim_set_keymap('n', '<leader>pt', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- I am not a emacs user to type shit just to duplicate line nvim
 -- make it easy for me
-vim.keymap.set("n", "<leader>DD", ":t.")
+vim.api.nvim_set_keymap("n", "<leader>D", ":t.<CR>",{noremap=true, silent = true } )
 --Save me the time of bring the terminal up
-vim.keymap.set("n", "<leader>t",":terminal")
+vim.api.nvim_set_keymap("n", "<leader>t",":terminal<CR>",{noremap=true,silent=true})
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
