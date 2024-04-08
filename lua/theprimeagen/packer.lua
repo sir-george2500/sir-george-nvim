@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use ("terrortylor/nvim-comment")
+  use("terrortylor/nvim-comment")
+  use('alvan/vim-closetag')
   use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
