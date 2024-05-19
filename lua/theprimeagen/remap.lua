@@ -9,8 +9,12 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.api.nvim_set_keymap("n", "<leader>D", ":t.<CR>",{noremap=true, silent = true } )
 --Save me the time of bring the terminal up
 vim.api.nvim_set_keymap("n", "<leader>t",":terminal<CR>",{noremap=true,silent=true})
+--hightligh all
 vim.api.nvim_set_keymap("n","<leader>ha","ggVG<CR>",{noremap=true})
+-- copy  all
 vim.api.nvim_set_keymap('n', '<leader>ca', 'ggVG"+y', { noremap = true, silent = true })
+-- delete all
+vim.api.nvim_set_keymap('n', '<leader>da','500dd',{noremap=true,silent=true})
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- DO NOT INCLUDE THIS
