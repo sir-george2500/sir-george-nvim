@@ -18,4 +18,6 @@ about though i would just suggest `git log -S`).
 ## What George Mulbah  have added to this repo
 - remap for duplicating of line in nvim , yeah skip the pain of typing
 - remap for opening the terminal in nvim
+- multiline comment aviable `hightligh + gc`
+- remap for copy all `leader + ca`
 

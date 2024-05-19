@@ -13,6 +13,15 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  --autopair
+  use {
+      "windwp/nvim-autopairs",
+      event = "InsertEnter",
+      config = function()
+          require("nvim-autopairs").setup {}
+      end
+  }
+
   use("terrortylor/nvim-comment")
   use('alvan/vim-closetag')
   use({
